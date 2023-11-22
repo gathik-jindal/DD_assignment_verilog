@@ -1,16 +1,3 @@
-// The 1-bit full adder can be expressed in a sum of products form.
-// sum = a.b.c_in + a'.b.c_in' + a'.b'.c_in + a.b'.c_in'
-// c_out = a.b + b.c_in + a.c_in
-/*
-Assuming a, b, c_in are the inputs and sum and c_out are the outputs, design a logic circuit
-to implement
-the 1-bit full adder, using only AND, NOT, and OR gates. Write the Verilog description for the
-circuit.
-You may use up to 4-input Verilog primitive and AND, OR gates. Write the stimulus for the
-full adder and
-check the functionality for all input combinations.
-*/
-
 `timescale 1ns/1ns
 
 module one_bit_adder(
