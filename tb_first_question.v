@@ -1,5 +1,4 @@
 `include "first_question.v"
-`timescale 1ns/1ns
 
 module tb_one_bit_adder;
 

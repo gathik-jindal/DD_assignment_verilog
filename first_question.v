@@ -1,5 +1,3 @@
-`timescale 1ns/1ns
-
 module one_bit_adder(
     // initalising all the inputs and outputs
     input a, b, c_in,
