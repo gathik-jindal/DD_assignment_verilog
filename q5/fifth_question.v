@@ -67,16 +67,12 @@ module FSM(up_down_counter, clock, reset, out);
 	input reset;
 	input up_down_counter;
 	output reg out;
-	// when state A=11, B=00, C=01 and D=10
+	// A=11, B=00, C=01 and D=10
 	parameter A = 2'b11, B = 2'b00, C = 2'b01, D = 2'b10;
-	// if we want to change the encoding, we can just change the parameters
 	reg [2:0] current_state, next_state;
 
-	// initial begin
-	// 	$dumpvars(0,FSM);
-	// end
+	
 
-	// sequential memory of the Moore FSM
 	always @(posedge clock, posedge reset)
 	begin
     	if(reset==1)
