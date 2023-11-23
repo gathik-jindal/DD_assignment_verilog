@@ -1,3 +1,10 @@
+// when the following blocking statements are converted to non blocking statements
+// unexpected behaviour is taking place and we cannot really predict the output
+
+// an observation to be noted is that if only the second blocking statement is made
+// a blocking statement then only the start and the ending ones are detected
+// rest all are ignored
+
 module stimulus();
     reg [7:0] A;
     wire f;
